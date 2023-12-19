@@ -1,0 +1,55 @@
+[
+    {
+        "id" : 1,
+        "name" : "equipment 1",
+        "img" : "https://sc04.alicdn.com/kf/Hb60027e44e6c404db68c500574df8f3bd.jpg",
+        "description" : "equpment to drill tree",
+        "condition" : "new",
+        "room" : 1
+    },
+
+    {
+        "id" : 2,
+        "name" : "equipment 2",
+        "img" : "https://free-images.com/or/31e5/boring_machine_drill_power.jpg",
+        "description" : "equpment to drill tree",
+        "condition" : "old",
+        "room" : 1
+    },
+
+    {
+        "id" : 3,
+        "name" : "equipment 3",
+        "img" : "https://free-images.com/or/31e5/boring_machine_drill_power.jpg",
+        "description" : "equpment to drill tree",
+        "condition" : "nominal",
+        "room" : 1
+    },
+
+    {
+        "id" : 4,
+        "name" : "equipment 4",
+        "img" : "https://i.ebayimg.com/images/g/Fa8AAOSw8-tWXf-1/s-l1600.jpg",
+        "description" : "equpment to drill tree",
+        "condition" : "nominal",
+        "room" : 2
+    },
+
+    {
+        "id" : 5,
+        "name" : "equipment 5",
+        "img": "https://priesttools.com/wp-content/uploads/2018/02/g0463-a500743722f59e0e9b578d17dae4f5e3.jpg",
+        "description" : "equpment to drill tree",
+        "condition" : "new",
+        "room" : 2
+    },
+
+    {
+        "id" : 6,
+        "name" : "equipment 6",
+        "img" : "https://st46.stpulscen.ru/images/product/278/167/450_original.png",
+        "description" : "equpment to drill tree",
+        "condition" : "old",
+        "room" : 2
+    }
+]
