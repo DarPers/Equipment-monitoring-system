@@ -1,0 +1,13 @@
+.slct{
+    text-indent: 15px;
+    display: block;
+    width: 52.1%;
+    height: 40px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    border: 2px solid #878cb4;
+    border-radius: 13px;
+    font-size: 15px;
+    color: #878cb4;
+    background-color: #fff;
+}
