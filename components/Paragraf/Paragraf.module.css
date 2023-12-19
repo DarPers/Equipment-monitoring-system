@@ -1,0 +1,18 @@
+.title {
+    color: #6c71a2;
+    font-size: 36px;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text {
+    text-align: left;
+    margin: 25px;
+    color: #878cb4;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.paragraf {
+    margin-top: 50px;
+}

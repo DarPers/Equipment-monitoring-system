@@ -1,0 +1,53 @@
+.head {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    height: 55px;
+    background-color: #6c71a2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFF;
+}
+
+.logo {
+    margin: 0 0 0 15px;
+    font-size: 33px;
+}
+
+.logo:hover {
+    opacity: 0.7;
+}
+
+.links {
+    padding-right: 30px;
+    font-size: 20px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a{
+    margin-left: 10px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: #b6b9d9;
+}
+
+.nick {
+    font-size: 20px;
+}
+
+.account img {
+    height: 35px;
+    width: 35px;
+    margin: 0 20px 0;
+}
+
+.account img:hover {
+    opacity: 0.7;
+}

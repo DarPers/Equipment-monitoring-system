@@ -1,0 +1,31 @@
+.content {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.equipments {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info {
+    padding-top: 60px;
+    margin: 0 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inpt_block {
+    padding-top: 90px;
+}
+
+.inpts {
+    margin-left: 32%;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    color: #6c71a2;
+}
