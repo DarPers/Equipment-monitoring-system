@@ -34,10 +34,6 @@ const Equip = (props) => {
                     {props.condition}
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button size="small" onClick={openModal}>Detail</Button>
-                <Button size="small" onClick={() => props.remove(props.id)}>Delete</Button>
-            </CardActions>
             <Modal name={props.name} 
                    condition={props.condition} 
                    img={props.img} 
@@ -45,6 +41,8 @@ const Equip = (props) => {
                    room={props.room} 
                    isOpen={isModalOpen} 
                    onClose={closeModal} />
+            <Button size="small" onClick={openModal}>Detail</Button>
+            <Button size="small" onClick={() => props.remove(props.id)}>Delete</Button>
         </Card>
     );
 };

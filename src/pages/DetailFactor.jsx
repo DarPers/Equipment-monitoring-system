@@ -10,7 +10,7 @@ const DetailFactor = () => {
     const navigate = useNavigate();
 
     const location = useLocation();
-    const [equipments, setEquipments]  = useState((json_data.filter((equip) => equip.id_factor === location.state.factor.id))[0]?.equipment);
+    const [equipments, setEquipments]  = useState(location.state?.factor.equipments);
 
     const remove = (id) => {
         setEquipments(equipments.filter((equipment) => equipment.id !== id));
@@ -18,6 +18,10 @@ const DetailFactor = () => {
 
     const back = () => {
         navigate("/factors");
+    }
+
+    const Add = () => {
+        navigate("/add", {state : {factor: location.state.factor}});
     }
 
     return (
@@ -31,6 +35,10 @@ const DetailFactor = () => {
                 <div className={classes.desc}>
                     <div>{location.state.factor.phone}</div>
                     <div>{location.state.factor.description}</div>
+                </div>
+                <div className={classes.info}>
+                    <div className={classes.title}>Equipments</div>
+                    <Button onClick={Add}>Add New</Button>
                 </div>
                 <div className={classes.equipments}>
                     {

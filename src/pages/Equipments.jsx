@@ -11,10 +11,6 @@ const Equipments = () => {
     const location = useLocation();
     const [equipments, setEquipments] = useState(location?.state != undefined ? location.state.newEquips : json_data);
 
-    const Add = () => {
-        navigate("/add", {state : {equipments : equipments}});
-    }
-
     const remove = (id) => {
         const newEquips = equipments.map((item) => ({
             ...item,
@@ -30,7 +26,6 @@ const Equipments = () => {
             <div className={classes.content}>
                 <div className={classes.info}>
                     <div className={classes.title}>Equipments</div>
-                    <Button onClick={Add}>Add New</Button>
                 </div>
                 <div className={classes.equipments}>
                     {equipments.map((eqp_group => 

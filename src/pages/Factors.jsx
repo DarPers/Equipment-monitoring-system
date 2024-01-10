@@ -38,6 +38,7 @@ const Factors = () => {
                             description={factor.description} 
                             phone_number={factor.phone_number}
                             remove={remove}
+                            equips={(json_data.filter((equip) => equip.id_factor === factor.id_factor))[0]?.equipment}
                         />
                     ))}
                 </List>

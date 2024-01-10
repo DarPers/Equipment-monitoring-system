@@ -13,9 +13,10 @@ const Adding = () => {
     const [newEquip, setNewEquip] = useState({id: uniqueId, name: "", description: "", room: "", img: "", condition: "Nominal"});
 
     const add = () => {
-        let equips = location.state.equipments;
-        equips.push(newEquip);
-        navigate("/equipments", {state: {newEquips: equips}});
+        let equips = location.state.factor;
+        console.log(equips);
+        equips.equipments.push(newEquip);
+        navigate("/detailFactor", {state: {factor: equips}});
     }
 
     return (

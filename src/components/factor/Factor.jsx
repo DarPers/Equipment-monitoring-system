@@ -13,7 +13,8 @@ const Factor = (props) => {
     const navigate = useNavigate();
 
     const detailFactor = () => {
-      navigate("/detailFactor", {state : {factor : {id: props.id, name: props.name, description: props.description, phone: props.phone_number}}});
+      navigate("/detailFactor", {state : {factor : {id: props.id, name: props.name, description: props.description, phone: props.phone_number, 
+                                                    equipments: props.equips}}});
     };
   
     return(
