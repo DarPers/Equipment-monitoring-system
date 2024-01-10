@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Header from "../components/header/Header";
 import Equip from "../components/equipment/Equip";
 import classes from "../styles/Page.module.css"
@@ -16,10 +16,12 @@ const Equipments = () => {
     }
 
     const remove = (id) => {
-        setEquipments(equipments.filter((equipments_group) => 
-            equipments_group.equipment.filter((equipment) => equipment.id !== id)));
+        const newEquips = equipments.map((item) => ({
+            ...item,
+            equipment: item.equipment.filter((equip) => equip.id !== id),
+        }));
+        setEquipments(newEquips);
         //перезапись файла
-        console.log(equipments);
     }
 
     return (
@@ -39,7 +41,8 @@ const Equipments = () => {
                                img={eqp.img} 
                                description={eqp.description} 
                                room={eqp.room}
-                               remove={remove}/>
+                               remove={remove}
+                               factor={eqp_group.name}/>
                         ))
                     ))}
                 </div>

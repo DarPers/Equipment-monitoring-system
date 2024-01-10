@@ -3,6 +3,16 @@
     padding-bottom: 10px;
 }
 
+.desc{
+    margin: 20px 0 0 40px;
+    text-align: left;
+}
+
+.desc *{
+    margin-bottom: 10px;
+    color: rgb(108, 126, 154);
+}
+
 .equipments {
     display: flex;
     justify-content: center;

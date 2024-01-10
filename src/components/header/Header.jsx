@@ -15,6 +15,7 @@ const Header = () => {
             <div onClick={goHome} className={classes.logo}>EquipControlSYS</div>
             <div className={classes.links}>
                 <div>
+                    <Link to="/factors">Factors</Link>
                     <Link to="/equipments">Equipments</Link>
                 </div>
             </div>

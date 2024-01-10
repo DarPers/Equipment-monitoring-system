@@ -1,10 +1,13 @@
 [
     {
       "id_factor": 1,
+      "name": "Precision Welding Solutions",
+      "description": "Specializing in high-precision welding services.",
+      "phone_number": "+1 (555) 123-4567",
       "equipment": [
         {
           "id": 1,
-          "img": "welding_machine.jpg",
+          "img": "https://3.imimg.com/data3/JV/OV/MY-1268762/kempact-mig2530-kempact-pulse3000-500x500.jpg",
           "name": "Precision Welding Machine",
           "description": "High-precision welding machine for industrial applications.",
           "condition": "New",
@@ -12,7 +15,7 @@
         },
         {
           "id": 2,
-          "img": "welding_mask.jpg",
+          "img": "https://mobileimages.lowes.com/product/converted/847428/847428062278.jpg",
           "name": "Advanced Welding Mask",
           "description": "Auto-darkening welding mask for increased safety.",
           "condition": "Nominal",
@@ -22,10 +25,13 @@
     },
     {
       "id_factor": 2,
+      "name": "TimberCraft Furniture",
+      "description": "Crafting exquisite furniture from sustainably sourced timber.",
+      "phone_number": "+1 (555) 987-6543",
       "equipment": [
         {
           "id": 3,
-          "img": "wood_lathe.jpg",
+          "img": "https://i.pinimg.com/736x/c7/76/f5/c776f5a0467471a7ca2037e900d040d7--woodturning-tools.jpg",
           "name": "Wood Lathe",
           "description": "Heavy-duty wood lathe for crafting fine wooden products.",
           "condition": "Old",
@@ -33,7 +39,7 @@
         },
         {
           "id": 4,
-          "img": "table_saw.jpg",
+          "img": "https://images-na.ssl-images-amazon.com/images/I/71EpqCnW5JL._AC_SL1500_.jpg",
           "name": "Table Saw",
           "description": "Powerful table saw for precise wood cutting.",
           "condition": "New",
@@ -43,10 +49,14 @@
     },
     {
       "id_factor": 3,
+      "name": "Global Steel Fabricators",
+      "description": "Providing custom steel fabrication solutions worldwide.",
+      "phone_number": "+1 (555) 789-0123",
+      "name_factor": "Global Steel Fabricators",
       "equipment": [
         {
           "id": 5,
-          "img": "steel_cutting_machine.jpg",
+          "img": "https://img.alicdn.com/bao/uploaded/TB176okXLDH8KJjy1XcXXcpdXXa.jpg",
           "name": "Steel Cutting Machine",
           "description": "Custom steel cutting machine for various applications.",
           "condition": "Nominal",
@@ -54,7 +64,7 @@
         },
         {
           "id": 6,
-          "img": "welding_robot.jpg",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Spot_welding_robot.jpg/800px-Spot_welding_robot.jpg",
           "name": "Automated Welding Robot",
           "description": "State-of-the-art robotic welding system for efficiency.",
           "condition": "New",
@@ -64,10 +74,14 @@
     },
     {
       "id_factor": 4,
+      "name": "Eco-Friendly Construction Materials",
+      "description": "Manufacturing and supplying sustainable construction materials.",
+      "phone_number": "+1 (555) 345-6789",
+      "name_factor": "Eco-Friendly Construction Materials",
       "equipment": [
         {
           "id": 7,
-          "img": "eco_friendly_bricks.jpg",
+          "img": "https://image.made-in-china.com/2f0j00nzIRJjKCEfkG/Germany-Full-Automatic-Construction-Hydraulic-Cement-Brick-Making-Machine.jpg",
           "name": "Eco-Friendly Bricks",
           "description": "Sustainable construction bricks made from recycled materials.",
           "condition": "Nominal",
@@ -85,10 +99,14 @@
     },
     {
       "id_factor": 5,
+      "name": "HealthTech Innovations",
+      "description": "Developing innovative healthcare solutions and medical devices.",
+      "phone_number": "+1 (555) 234-5678",
+      "name_factor": "HealthTech Innovations",
       "equipment": [
         {
           "id": 9,
-          "img": "health_monitoring_device.jpg",
+          "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Wrist-oximeter.jpg/1599px-Wrist-oximeter.jpg",
           "name": "Health Monitoring Device",
           "description": "Innovative health monitoring device for personalized care.",
           "condition": "New",
@@ -96,13 +114,48 @@
         },
         {
           "id": 10,
-          "img": "fitness_equipment.jpg",
+          "img": "https://sc04.alicdn.com/kf/H8c8b310581b04904b87c1ff1f3fcb48eg.jpg",
           "name": "Cutting-Edge Fitness Equipment",
           "description": "State-of-the-art fitness equipment for health enthusiasts.",
           "condition": "Nominal",
           "room": "9"
         }
       ]
+    },
+    {
+      "id_factor": 6,
+      "name": "Artisan Woodworks",
+      "description": "Creating handcrafted wooden products and designs.",
+      "phone_number": "+1 (555) 876-5432",
+      "equipment": []
+    },
+    {
+      "id_factor": 7,
+      "name": "Solar Power Solutions",
+      "description": "Designing and implementing solar energy solutions.",
+      "phone_number": "+1 (555) 432-1098",
+      "equipment": []
+    },
+    {
+      "id_factor": 8,
+      "name": "Culinary Creations Catering",
+      "description": "Providing gourmet catering services for special events.",
+      "phone_number": "+1 (555) 210-9876",
+      "equipment": []
+    },
+    {
+      "id_factor": 9,
+      "name": "Adventure Travel Expeditions",
+      "description": "Organizing adventurous travel experiences for thrill-seekers.",
+      "phone_number": "+1 (555) 678-9012",
+      "equipment": []
+    },
+    {
+      "id_factor": 10,
+      "name": "Tech Education Hub",
+      "description": "Empowering minds through technology-focused education.",
+      "phone_number": "+1 (555) 901-2345",
+      "equipment": []
     }
   ]
   

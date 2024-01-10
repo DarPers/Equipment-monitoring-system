@@ -6,10 +6,14 @@ import Avatar from '@mui/material/Avatar';
 import FactoryIcon from '@mui/icons-material/Factory';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Button, IconButton} from "@mui/material";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Factor = (props) => {
-     const detailFactor = () => {
-      //переход на страницу 
+
+    const navigate = useNavigate();
+
+    const detailFactor = () => {
+      navigate("/detailFactor", {state : {factor : {id: props.id, name: props.name, description: props.description, phone: props.phone_number}}});
     };
   
     return(

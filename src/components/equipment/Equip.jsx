@@ -19,13 +19,16 @@ const Equip = (props) => {
         <Card className={classes.card}>
             <CardMedia
                 component="img"
-                alt="equipmemt"
+                alt={props.name}
                 height="300"
                 image={props.img}
             />
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                     {props.name}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                    {props.factor}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                     {props.condition}

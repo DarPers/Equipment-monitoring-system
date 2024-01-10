@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Header from "../components/header/Header";
 import classes from "../styles/Page.module.css"
-import json_data from "../data/factors.json"
+import json_data from "../data/equipment.json"
 import Factor from "../components/factor/Factor";
 import { Button } from "@mui/material";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -17,7 +17,7 @@ const Factors = () => {
     }
 
     const remove = (id) => {
-        setFactors(factors.filter((factor) => factor.id !== id));
+        setFactors(factors.filter((factor) => factor.id_factor !== id));
         //перезапись файла
     }
 
@@ -33,8 +33,8 @@ const Factors = () => {
                     {factors.map((factor => 
                         <Factor
                             name={factor.name} 
-                            key={factor.id} 
-                            id={factor.id} 
+                            key={factor.id_factor} 
+                            id={factor.id_factor} 
                             description={factor.description} 
                             phone_number={factor.phone_number}
                             remove={remove}
