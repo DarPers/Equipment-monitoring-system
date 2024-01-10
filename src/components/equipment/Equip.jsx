@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import classes from "./Equip.module.css"
-import { Button, Card, CardMedia, CardContent, CardActions, Typography} from "@mui/material";
+import { Button, Card, CardMedia, CardContent, Typography} from "@mui/material";
 import Modal from "../modal/Modal";
 
 const Equip = (props) => {

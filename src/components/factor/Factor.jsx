@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
@@ -6,7 +6,7 @@ import Avatar from '@mui/material/Avatar';
 import FactoryIcon from '@mui/icons-material/Factory';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Button, IconButton} from "@mui/material";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Factor = (props) => {
 
@@ -18,7 +18,7 @@ const Factor = (props) => {
     };
   
     return(
-        <ListItem
+        <ListItem style={{marginLeft: "30%"}}
           secondaryAction={
             <div>
               <Button edge="end" onClick={detailFactor}>Detail</Button>

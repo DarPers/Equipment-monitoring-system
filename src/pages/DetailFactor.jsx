@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Header from "../components/header/Header";
 import Equip from "../components/equipment/Equip";
 import classes from "../styles/Page.module.css"
-import json_data from "../data/equipment.json"
 import { Button } from "@mui/material";
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -10,10 +9,12 @@ const DetailFactor = () => {
     const navigate = useNavigate();
 
     const location = useLocation();
-    const [equipments, setEquipments]  = useState(location.state?.factor.equipments);
-
+    const [factor, setFactor]  = useState(location.state?.factor);
+    console.log(factor);
     const remove = (id) => {
-        setEquipments(equipments.filter((equipment) => equipment.id !== id));
+        const newEquips = factor.equipments.filter((equip) => equip.id !== id)
+        setFactor({...factor, equipments: newEquips});
+        console.log(factor.equipments);
     }
 
     const back = () => {
@@ -21,7 +22,7 @@ const DetailFactor = () => {
     }
 
     const Add = () => {
-        navigate("/add", {state : {factor: location.state.factor}});
+        navigate("/add", {state : {factor: factor}});
     }
 
     return (
@@ -29,12 +30,12 @@ const DetailFactor = () => {
             <Header></Header>
             <div className={classes.content}>
                 <div className={classes.info}>
-                    <div className={classes.title}>{location.state.factor.name}</div>
+                    <div className={classes.title}>{factor.name}</div>
                     <Button onClick={back}>Back</Button>
                 </div>
                 <div className={classes.desc}>
-                    <div>{location.state.factor.phone}</div>
-                    <div>{location.state.factor.description}</div>
+                    <div>{factor.phone}</div>
+                    <div>{factor.description}</div>
                 </div>
                 <div className={classes.info}>
                     <div className={classes.title}>Equipments</div>
@@ -42,18 +43,17 @@ const DetailFactor = () => {
                 </div>
                 <div className={classes.equipments}>
                     {
-                        equipments ? 
-                            equipments.map(eqp => 
-                                <Equip name={eqp.name} 
-                                   condition={eqp.condition} key={eqp.id} 
-                                   id={eqp.id} 
-                                   img={eqp.img} 
-                                   description={eqp.description} 
-                                   room={eqp.room}
-                                   remove={remove}
-                                />
-                            )
-                            : <p>No equipments</p>
+                        factor.equipments?.length !== 0 ?
+                        factor.equipments?.map(eqp => 
+                            <Equip name={eqp.name} 
+                               condition={eqp.condition} key={eqp.id} 
+                               id={eqp.id} 
+                               img={eqp.img} 
+                               description={eqp.description} 
+                               room={eqp.room}
+                               remove={remove}
+                            />
+                        ) : <p>No equipments</p>
                     }
                 </div>
             </div>

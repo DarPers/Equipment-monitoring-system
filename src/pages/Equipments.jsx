@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import Header from "../components/header/Header";
 import Equip from "../components/equipment/Equip";
 import classes from "../styles/Page.module.css"
 import json_data from "../data/equipment.json"
-import { Button } from "@mui/material";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import Filter from "../components/filter/Filter";
 
 const Equipments = () => {
-    const navigate = useNavigate();
     const location = useLocation();
     const [equipments, setEquipments] = useState(location?.state != undefined ? location.state.newEquips : json_data);
+    console.log(equipments);
+    const [query, setQuery] = useState("");
 
     const remove = (id) => {
         const newEquips = equipments.map((item) => ({
@@ -20,6 +21,17 @@ const Equipments = () => {
         //перезапись файла
     }
 
+    const searchedEquips = useMemo(() => {
+        if (query){
+          return equipments.map((item) => ({
+            ...item, 
+            equipment: item.equipment.filter(equip => equip.name.toLowerCase().includes(query) || equip.condition.toLowerCase().includes(query))}))
+        }
+        else {
+            return equipments;
+        }
+    }, [query, equipments]);
+
     return (
         <div>
             <Header></Header>
@@ -27,8 +39,9 @@ const Equipments = () => {
                 <div className={classes.info}>
                     <div className={classes.title}>Equipments</div>
                 </div>
+                <Filter searchQuery={query} setSearchQuery={setQuery}></Filter>
                 <div className={classes.equipments}>
-                    {equipments.map((eqp_group => 
+                    {searchedEquips.map((eqp_group => 
                         eqp_group.equipment.map((eqp => 
                             <Equip name={eqp.name} 
                                condition={eqp.condition} key={eqp.id} 

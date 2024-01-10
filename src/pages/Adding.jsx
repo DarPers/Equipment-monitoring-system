@@ -14,8 +14,7 @@ const Adding = () => {
 
     const add = () => {
         let equips = location.state.factor;
-        console.log(equips);
-        equips.equipments.push(newEquip);
+        equips.equipments?.push(newEquip);
         navigate("/detailFactor", {state: {factor: equips}});
     }
 

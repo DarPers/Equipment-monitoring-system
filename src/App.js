@@ -5,6 +5,7 @@ import Adding from "../src/pages/Adding"
 import Factors from './pages/Factors';
 import DetailFactor from './pages/DetailFactor';
 import Equipments from './pages/Equipments';
+import AddingFactors from './pages/AddingFactors';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/equipments" element={<Equipments></Equipments>} />
             <Route path="/factors" element={<Factors></Factors>} />
             <Route path="/detailFactor" element={<DetailFactor></DetailFactor>} />
+            <Route path="/addFactory" element={<AddingFactors></AddingFactors>} />
           </Routes>
         </BrowserRouter>
     </div>
