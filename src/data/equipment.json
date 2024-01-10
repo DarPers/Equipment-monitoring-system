@@ -1,55 +1,108 @@
 [
     {
-        "id" : 1,
-        "name" : "equipment 1",
-        "img" : "https://sc04.alicdn.com/kf/Hb60027e44e6c404db68c500574df8f3bd.jpg",
-        "description" : "equpment to drill tree",
-        "condition" : "new",
-        "room" : 1
+      "id_factor": 1,
+      "equipment": [
+        {
+          "id": 1,
+          "img": "welding_machine.jpg",
+          "name": "Precision Welding Machine",
+          "description": "High-precision welding machine for industrial applications.",
+          "condition": "New",
+          "room": "1"
+        },
+        {
+          "id": 2,
+          "img": "welding_mask.jpg",
+          "name": "Advanced Welding Mask",
+          "description": "Auto-darkening welding mask for increased safety.",
+          "condition": "Nominal",
+          "room": "2"
+        }
+      ]
     },
-
     {
-        "id" : 2,
-        "name" : "equipment 2",
-        "img" : "https://free-images.com/or/31e5/boring_machine_drill_power.jpg",
-        "description" : "equpment to drill tree",
-        "condition" : "old",
-        "room" : 1
+      "id_factor": 2,
+      "equipment": [
+        {
+          "id": 3,
+          "img": "wood_lathe.jpg",
+          "name": "Wood Lathe",
+          "description": "Heavy-duty wood lathe for crafting fine wooden products.",
+          "condition": "Old",
+          "room": "1"
+        },
+        {
+          "id": 4,
+          "img": "table_saw.jpg",
+          "name": "Table Saw",
+          "description": "Powerful table saw for precise wood cutting.",
+          "condition": "New",
+          "room": "1"
+        }
+      ]
     },
-
     {
-        "id" : 3,
-        "name" : "equipment 3",
-        "img" : "https://free-images.com/or/31e5/boring_machine_drill_power.jpg",
-        "description" : "equpment to drill tree",
-        "condition" : "nominal",
-        "room" : 1
+      "id_factor": 3,
+      "equipment": [
+        {
+          "id": 5,
+          "img": "steel_cutting_machine.jpg",
+          "name": "Steel Cutting Machine",
+          "description": "Custom steel cutting machine for various applications.",
+          "condition": "Nominal",
+          "room": "2"
+        },
+        {
+          "id": 6,
+          "img": "welding_robot.jpg",
+          "name": "Automated Welding Robot",
+          "description": "State-of-the-art robotic welding system for efficiency.",
+          "condition": "New",
+          "room": "2"
+        }
+      ]
     },
-
     {
-        "id" : 4,
-        "name" : "equipment 4",
-        "img" : "https://i.ebayimg.com/images/g/Fa8AAOSw8-tWXf-1/s-l1600.jpg",
-        "description" : "equpment to drill tree",
-        "condition" : "nominal",
-        "room" : 2
+      "id_factor": 4,
+      "equipment": [
+        {
+          "id": 7,
+          "img": "eco_friendly_bricks.jpg",
+          "name": "Eco-Friendly Bricks",
+          "description": "Sustainable construction bricks made from recycled materials.",
+          "condition": "Nominal",
+          "room": "3"
+        },
+        {
+          "id": 8,
+          "img": "energy_efficient_machinery.jpg",
+          "name": "Energy-Efficient Construction Machinery",
+          "description": "Machinery designed for energy efficiency in construction.",
+          "condition": "New",
+          "room": "4"
+        }
+      ]
     },
-
     {
-        "id" : 5,
-        "name" : "equipment 5",
-        "img": "https://priesttools.com/wp-content/uploads/2018/02/g0463-a500743722f59e0e9b578d17dae4f5e3.jpg",
-        "description" : "equpment to drill tree",
-        "condition" : "new",
-        "room" : 2
-    },
-
-    {
-        "id" : 6,
-        "name" : "equipment 6",
-        "img" : "https://st46.stpulscen.ru/images/product/278/167/450_original.png",
-        "description" : "equpment to drill tree",
-        "condition" : "old",
-        "room" : 2
+      "id_factor": 5,
+      "equipment": [
+        {
+          "id": 9,
+          "img": "health_monitoring_device.jpg",
+          "name": "Health Monitoring Device",
+          "description": "Innovative health monitoring device for personalized care.",
+          "condition": "New",
+          "room": "7"
+        },
+        {
+          "id": 10,
+          "img": "fitness_equipment.jpg",
+          "name": "Cutting-Edge Fitness Equipment",
+          "description": "State-of-the-art fitness equipment for health enthusiasts.",
+          "condition": "Nominal",
+          "room": "9"
+        }
+      ]
     }
-]
+  ]
+  

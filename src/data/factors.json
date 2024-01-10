@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "name": "Precision Welding Solutions",
+      "description": "Specializing in high-precision welding services.",
+      "phone_number": "+1 (555) 123-4567"
+    },
+    {
+      "id": 2,
+      "name": "TimberCraft Furniture",
+      "description": "Crafting exquisite furniture from sustainably sourced timber.",
+      "phone_number": "+1 (555) 987-6543"
+    },
+    {
+      "id": 3,
+      "name": "Global Steel Fabricators",
+      "description": "Providing custom steel fabrication solutions worldwide.",
+      "phone_number": "+1 (555) 789-0123"
+    },
+    {
+      "id": 4,
+      "name": "Eco-Friendly Construction Materials",
+      "description": "Manufacturing and supplying sustainable construction materials.",
+      "phone_number": "+1 (555) 345-6789"
+    },
+    {
+      "id": 5,
+      "name": "HealthTech Innovations",
+      "description": "Developing innovative healthcare solutions and medical devices.",
+      "phone_number": "+1 (555) 234-5678"
+    },
+    {
+      "id": 6,
+      "name": "Artisan Woodworks",
+      "description": "Creating handcrafted wooden products and designs.",
+      "phone_number": "+1 (555) 876-5432"
+    },
+    {
+      "id": 7,
+      "name": "Solar Power Solutions",
+      "description": "Designing and implementing solar energy solutions.",
+      "phone_number": "+1 (555) 432-1098"
+    },
+    {
+      "id": 8,
+      "name": "Culinary Creations Catering",
+      "description": "Providing gourmet catering services for special events.",
+      "phone_number": "+1 (555) 210-9876"
+    },
+    {
+      "id": 9,
+      "name": "Adventure Travel Expeditions",
+      "description": "Organizing adventurous travel experiences for thrill-seekers.",
+      "phone_number": "+1 (555) 678-9012"
+    },
+    {
+      "id": 10,
+      "name": "Tech Education Hub",
+      "description": "Empowering minds through technology-focused education.",
+      "phone_number": "+1 (555) 901-2345"
+    }
+  ]
+  

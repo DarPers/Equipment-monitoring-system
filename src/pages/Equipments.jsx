@@ -16,8 +16,10 @@ const Equipments = () => {
     }
 
     const remove = (id) => {
-        setEquipments(equipments.filter((equipment) => equipment.id !== id));
+        setEquipments(equipments.filter((equipments_group) => 
+            equipments_group.equipment.filter((equipment) => equipment.id !== id)));
         //перезапись файла
+        console.log(equipments);
     }
 
     return (
@@ -29,14 +31,17 @@ const Equipments = () => {
                     <Button onClick={Add}>Add New</Button>
                 </div>
                 <div className={classes.equipments}>
-                    {equipments.map((eqp => 
-                        <Equip name={eqp.name} 
+                    {equipments.map((eqp_group => 
+                        eqp_group.equipment.map((eqp => 
+                            <Equip name={eqp.name} 
                                condition={eqp.condition} key={eqp.id} 
                                id={eqp.id} 
                                img={eqp.img} 
                                description={eqp.description} 
                                room={eqp.room}
-                               remove={remove}/>))}
+                               remove={remove}/>
+                        ))
+                    ))}
                 </div>
             </div>
         </div>

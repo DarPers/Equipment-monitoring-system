@@ -24,7 +24,13 @@
     display: flex;
     flex-direction: column;
     margin: 0 30%;
-    /* margin-left: 32%; */
+}
+
+.factors {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20%;
+    width: 80%;
 }
 
 .inpts * {
