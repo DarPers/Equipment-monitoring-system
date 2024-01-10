@@ -1,16 +1,16 @@
 .title {
-    color: #6c71a2;
+    color: #4d9bea;
     font-size: 36px;
     font-weight: 700;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Roboto;
 }
 
 .text {
     text-align: left;
     margin: 25px;
-    color: #878cb4;
+    color: #395776;
     font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Roboto;
 }
 
 .paragraf {

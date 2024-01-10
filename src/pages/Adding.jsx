@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/header/Header";
 import classes from "../styles/Page.module.css"
-import Button from "../UI/button/Button";
-import Input from "../UI/input/Input";
-import Select from "../UI/select/Select";
+import { MenuItem, TextField, Button } from "@mui/material";
 import { useNavigate, useLocation } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
 
@@ -27,11 +25,24 @@ const Adding = () => {
                 <div className={classes.inpt_block}>
                     <div className={classes.title}>Create new equipment</div>
                     <div className={classes.inpts}>
-                        <Input value={newEquip.name} onChange={(e) => setNewEquip({...newEquip, name: e.target.value})} placeholder="name"></Input>
-                        <Input value={newEquip.description} onChange={(e) => setNewEquip({...newEquip, description: e.target.value})} placeholder="description"></Input>
-                        <Input value={newEquip.room} onChange={(e) => setNewEquip({...newEquip, room: e.target.value})} placeholder="room"></Input>
-                        <Input value={newEquip.img} onChange={(e) => setNewEquip({...newEquip, img: e.target.value})} placeholder="img"></Input>
-                        <Select value={newEquip.condition} setValue={(e) => setNewEquip({...newEquip, condition: e.target.value})} options={option} defaultValue="Conditional"></Select>
+                        <TextField id="outlined-basic" value={newEquip.name} onChange={(e) => setNewEquip({...newEquip, name: e.target.value})} label="Name" variant="outlined" />
+                        <TextField id="outlined-basic" value={newEquip.description} onChange={(e) => setNewEquip({...newEquip, description: e.target.value})} label="Description" variant="outlined" />
+                        <TextField id="outlined-basic" value={newEquip.room} onChange={(e) => setNewEquip({...newEquip, room: e.target.value})} label="Room" variant="outlined" />
+                        <TextField id="outlined-basic" value={newEquip.img} onChange={(e) => setNewEquip({...newEquip, img: e.target.value})} label="Image" variant="outlined" />
+                        <TextField
+                            id="outlined-select-currency"
+                            select
+                            label="Conditional"
+                            onChange={(e) => setNewEquip({...newEquip, condition: e.target.value})}
+                            defaultValue="Old"
+                            value={newEquip.condition}
+                            helperText="Please select your option">
+                            {option.map((option) => (
+                              <MenuItem key={option.value} value={option.value}>
+                                {option.value}
+                              </MenuItem>
+                            ))}
+                        </TextField>
                     </div>
                 </div>
                 <Button onClick={add}>Add equipment</Button>

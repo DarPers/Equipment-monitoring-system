@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import classes from "./Equip.module.css"
-import Button from "../../UI/button/Button";
+import { Button, Card, CardMedia, CardContent, CardActions, Typography} from "@mui/material";
 import Modal from "../modal/Modal";
 
 const Equip = (props) => {
@@ -16,18 +16,25 @@ const Equip = (props) => {
     };
 
     return(
-        <div className={classes.card}>
-            <div className={classes.image}>
-                <img alt="" src={props.img}></img>
-            </div>
-            <div>
-                <div className={classes.title}>{props.name}</div>
-                <div>Condition: {props.condition}</div>
-            </div>
-            <div className={classes.btn_block}>
-                <Button onClick={openModal}>Detail</Button>
-                <Button onClick={() => props.remove(props.id)}>Delete</Button>
-            </div>
+        <Card className={classes.card}>
+            <CardMedia
+                component="img"
+                alt="equipmemt"
+                height="300"
+                image={props.img}
+            />
+            <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                    {props.name}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                    {props.condition}
+                </Typography>
+            </CardContent>
+            <CardActions>
+                <Button size="small" onClick={openModal}>Detail</Button>
+                <Button size="small" onClick={() => props.remove(props.id)}>Delete</Button>
+            </CardActions>
             <Modal name={props.name} 
                    condition={props.condition} 
                    img={props.img} 
@@ -35,7 +42,7 @@ const Equip = (props) => {
                    room={props.room} 
                    isOpen={isModalOpen} 
                    onClose={closeModal} />
-        </div>
+        </Card>
     );
 };
 

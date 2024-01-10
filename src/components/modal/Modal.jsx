@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from "./Modal.module.css"
-import Button from '../../UI/button/Button';
+import { Button } from "@mui/material";
 
 const Modal = ({ isOpen, onClose, ...props}) => {
   if (!isOpen) return null;
@@ -19,7 +19,7 @@ const Modal = ({ isOpen, onClose, ...props}) => {
                     <div>Room №{props.room}</div>
                 </div>
             </div>
-        <Button onClick={onClose}>Закрыть</Button>
+        <Button onClick={onClose}>Close</Button>
       </div>
     </div>
   );

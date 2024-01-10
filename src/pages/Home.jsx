@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../components/header/Header";
-import Button from "../UI/button/Button";
+import { Button } from "@mui/material";
 import Paragraf from "../components/Paragraf/Paragraf"
 import classes from "../styles/Page.module.css"
 import { useNavigate } from "react-router-dom";

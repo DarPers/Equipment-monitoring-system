@@ -6,14 +6,14 @@
     width: 100%;
     position: fixed;
     height: 55px;
-    background-color: #6c71a2;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #4d9bea;
+    font-family: Roboto;
     color: #FFF;
 }
 
 .logo {
     margin: 0 0 0 15px;
-    font-size: 33px;
+    font-size: 25px;
 }
 
 .logo:hover {
@@ -22,7 +22,7 @@
 
 .links {
     padding-right: 30px;
-    font-size: 20px;   
+    font-size: 18px;   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +35,7 @@
 }
 
 .links a:hover{
-    color: #b6b9d9;
+    color: #aed7ff;
 }
 
 .nick {

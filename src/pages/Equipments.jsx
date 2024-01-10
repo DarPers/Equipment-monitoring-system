@@ -3,7 +3,7 @@ import Header from "../components/header/Header";
 import Equip from "../components/equipment/Equip";
 import classes from "../styles/Page.module.css"
 import json_data from "../data/equipment.json"
-import Button from "../UI/button/Button";
+import { Button } from "@mui/material";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const Equipments = () => {
@@ -25,7 +25,7 @@ const Equipments = () => {
             <Header></Header>
             <div className={classes.content}>
                 <div className={classes.info}>
-                    <div className={classes.title}>Equipment</div>
+                    <div className={classes.title}>Equipments</div>
                     <Button onClick={Add}>Add New</Button>
                 </div>
                 <div className={classes.equipments}>
